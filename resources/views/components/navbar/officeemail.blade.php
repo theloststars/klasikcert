@@ -1,3 +1,3 @@
-@foreach ($datas  as $item)
+@foreach ($datas ?? ''  as $item)
 {{$item->content}}                             
 @endforeach
