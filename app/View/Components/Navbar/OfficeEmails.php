@@ -15,7 +15,7 @@ class OfficeEmails extends Component
      */
     public function __construct()
     {
-        $this->datas = Contact::where('url_slug','phone-number')->get();
+        $this->datas = Contact::where('url_slug','office-email');
     }
 
     /**
