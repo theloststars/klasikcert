@@ -98,7 +98,7 @@ Route::get('/dashboard', function () {
     return redirect()->route('admin.index');
 })->middleware(['auth'])->name('dashboard');
 
-Route::middleware(['auth', 'verified', 'can:admin access'])->prefix('adm2355ab')->name('admin.')->group(function () {
+Route::middleware(['auth', 'verified', 'can:admin access'])->prefix('admklask')->name('admin.')->group(function () {
     Route::get('/', AdminIndex::class)->name('index');
 
     // roles & permissions
