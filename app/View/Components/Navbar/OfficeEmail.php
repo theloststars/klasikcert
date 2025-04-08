@@ -7,7 +7,7 @@ use Illuminate\View\Component;
 
 class OfficeEmail extends Component
 {
-    public $datas;
+    public $emails;
     /**
      * Create a new component instance.
      *
@@ -15,7 +15,7 @@ class OfficeEmail extends Component
      */
     public function __construct()
     {
-        $this->datas = Contact::where('url_slug','office-email')->get();
+        $this->emails = Contact::where('url_slug','office-email')->get();
     }
 
     /**
