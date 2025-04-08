@@ -68,7 +68,7 @@
 
                   <div class="spacer-20"></div>
 
-                  <div class="fw-bold text-white"><i class="icofont-location-pin me-2 id-color-2"></i>Office Location</div>
+                  <div class="fw-bold text-white"><i class="icofont-location me-2 id-color-2"></i>Office Location</div>
                   <x-navbar.address />
 
                   <div class="spacer-20"></div>
