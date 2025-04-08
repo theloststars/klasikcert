@@ -25,6 +25,6 @@ class OfficeEmails extends Component
      */
     public function render()
     {
-        return view('components.navbar.officeemails');
+        return view('components.navbar.officeemails', compact('datas'));
     }
 }
