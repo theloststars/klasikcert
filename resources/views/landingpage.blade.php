@@ -378,21 +378,21 @@
                 <section class="relative overflow-hidden" style="background-size: cover; background-repeat: no-repeat;">
                     <div class="container" style="background-size: cover; background-repeat: no-repeat;">
                         <div class="row g-4 grid-divider" style="background-size: cover; background-repeat: no-repeat;">
-                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".2s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".2s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">       
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-phone"></i>
                                     <h5 class="mb-0">Phone</h5>
                                     <x-navbar.phonenumber />
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                         
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa-solid fa-map-location-dot"></i>  
                                     <h5 class="mb-0">Address</h5>
                                     <x-navbar.address />
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".8s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
+                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".8s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-envelope"></i>
                                     <h5 class="mb-0">Email</h5>
