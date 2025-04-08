@@ -385,13 +385,6 @@
                                     +1 5000 6000
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".4s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
-                                <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                  
-                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-user"></i>    
-                                    <h5 class="mb-0">Support</h5>
-                                    +1 5000 6000
-                                </div>
-                            </div>
                             <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                         
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa-brands fa-whatsapp"></i>  
