@@ -396,7 +396,7 @@
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-envelope"></i>
                                     <h5 class="mb-0">Email</h5>
-                                    {{-- <x-navbar.officeemail /> --}}
+                                    <x-navbar.emails />
                                 </div>
                             </div>
                         </div>
