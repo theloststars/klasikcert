@@ -1,3 +1,3 @@
-@foreach ($datas  as $item)
+@foreach ($dataemails  as $item)
 {{$item->content}}                             
 @endforeach
