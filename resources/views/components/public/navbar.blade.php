@@ -6,7 +6,7 @@
                     <div class="de-flex-col">
                         <!-- logo begin -->
                         <div id="logo">
-                            <a href="index.html">
+                            <a href="{{ route('landingpage')}}">
                                 <img class="logo-main" src="{{asset('uclean/images/KCI_logo.png')}}" alt="" >
                                 <img class="logo-scroll" src="{{asset('uclean/images/KCIlogo.png')}}" alt="" >
                                 <img class="logo-mobile" src="{{asset('uclean/images/KCIlogo.png')}}" alt="" >
