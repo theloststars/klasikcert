@@ -1,0 +1,372 @@
+.text-green {
+  color: #01a449;
+}
+
+.text-orange {
+  color: #f58019;
+}
+
+.text-truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.box {
+  border: #01a449 solid 3px;
+  border-radius: 5px;
+  padding: 15px;
+  height: 5rem !important;
+}
+
+/* services : start */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  section#services {
+    margin-top: 15rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+
+/* services : end */
+
+/* call us now : start */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  div.nav__holder.nav--sticky.nav__holder--sticky #callUsNav {
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -7px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* call us now : end */
+
+/* cookie : start */
+.cc-window {
+  background: white !important;
+}
+
+.cc-message {
+  color: #6a798c !important;
+}
+
+.cc-container.container a {
+  color: #01a449 !important;
+}
+
+.cc-container.container a.cc-btn.cc-dismiss {
+  background-color: #01a449 !important;
+  color: white !important;
+}
+/* cookie : end */
+
+/* ourServicesSlide : start */
+#ourServicesSlide h6 {
+  color: #01a449;
+}
+
+#ourServicesSlide a > div {
+  box-shadow: 1px 1px 5px #888888;
+  border-radius: 5px;
+}
+
+#ourServicesSlide a:hover div {
+  background: #f58019;
+}
+
+#ourServicesSlide a:hover h6 {
+  color: white;
+}
+
+#ourServicesSlide .splide__pagination.splide__pagination--ltr {
+  bottom: -1.5em !important;
+}
+
+#ourServicesSlide .splide__pagination__page {
+  background: #01a449;
+}
+
+#ourServicesSlide .splide__pagination__page.is-active {
+  background: #f58019;
+}
+/* ourServicesSlide : end */
+
+/* testimonial : start */
+#owl-testimonials .owl-dot {
+  background: none;
+  border: none;
+}
+#owl-testimonials .owl-dot:focus {
+  outline: none;
+}
+/* testimonial : end */
+
+/* latest news : start */
+#latestNewsSlide .splide__pagination.splide__pagination--ltr {
+  bottom: -1.5em !important;
+}
+
+#latestNewsSlide .splide__pagination__page {
+  background: #01a449;
+}
+
+#latestNewsSlide .splide__pagination__page.is-active {
+  background: #f58019;
+}
+/* latest news : end */
+
+/* clients : start */
+#ourClientsSlide .splide__pagination.splide__pagination--ltr {
+  bottom: -1.5em !important;
+}
+
+#ourClientsSlide .splide__pagination__page {
+  background: #01a449;
+}
+
+#ourClientsSlide .splide__pagination__page.is-active {
+  background: #f58019;
+}
+/* clients : end */
+
+/* contact us : start */
+#section-contact-us * {
+  color: white;
+}
+
+#section-contact-us input,
+textarea {
+  background-color: #41b574;
+  border: none;
+  color: white;
+}
+
+#section-contact-us input::placeholder,
+textarea::placeholder {
+  color: white;
+}
+
+#section-contact-us textarea:focus {
+  background-color: #41b574;
+}
+/* contact us : end */
+
+/* hero : start */
+#hero {
+  position: absolute;
+  right: 0;
+  height: 50rem;
+  display: none;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #hero {
+    position: absolute;
+    right: 0;
+    height: 40rem;
+    display: unset;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #hero {
+    position: absolute;
+    right: 0;
+    height: 50rem;
+    display: unset;
+  }
+}
+/* hero : end */
+
+/* logo : start */
+/* Medium devices (tablets, 768px and up) */
+img.logo {
+  height: 3rem;
+}
+
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  img.logo {
+    height: 3rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* logo : end */
+
+/* detail-training : start */
+#services-training .splide__pagination.splide__pagination--ltr {
+  bottom: -1.5em !important;
+}
+
+#services-training .splide__pagination__page {
+  background: #01a449;
+}
+
+#services-training .splide__pagination__page.is-active {
+  background: #f58019;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #detail-training {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* detail-training : end */
+
+/* sidebar : start */
+#sidebar .btn.btn--lg.btn--color.btn--icon.promo-section__text {
+  background-color: #01a449;
+  color: white;
+  box-shadow: 0 5px 15px rgba(98, 250, 118, 0.4);
+}
+
+#sidebar a {
+  color: #6a798c;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #sidebar h2 {
+    font-size: 24px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* sidebar : end */
+
+/* check certificate : start */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #check-certificate {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* check certificate : end */
+
+/* blogs : start */
+#blogs #pagination a {
+  color: #01a449;
+}
+
+#blogs #pagination a.active {
+  color: #f58019;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #blogs {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* blogs : end */
+
+/* metodologi : start */
+#metodologi {
+  background-color: #01a449;
+}
+
+#metodologi img {
+  height: 50px;
+  width: 50px;
+}
+
+#metodologi h5,
+#metodologi p {
+  color: white;
+}
+/* metodologi : end */
+
+/* detail blog: start */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*  */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #blog-title {
+    margin-top: 9rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /*  */
+}
+/* detail blog: end */
