@@ -16,6 +16,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\WhyusController;
 use App\Http\Controllers\StandardController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TrainingCertificateController;
+
 use App\Mail\ContactUs;
 use App\Models\About;
 use App\Models\Blog;
@@ -27,6 +29,8 @@ use App\Models\Whyus;
 use App\Models\Contact;
 use App\Models\Standard;
 use App\Models\FooterLogo;
+use App\Models\TrainingCertificate;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
@@ -111,6 +115,9 @@ Route::middleware(['auth', 'verified', 'can:admin access'])->prefix('admklask')-
     // certificates
     Route::resource('/certificates', CertificateController::class);
 
+    // certificates
+    Route::resource('/trainingcertificates', TrainingCertificateController::class);
+
     // trainings
     Route::post('trainings-2', [StandardController::class, 'updateTraining'])->name('trainings.update.2');
     Route::resource('/trainings', StandardController::class)->names('trainings')->except('show');
@@ -155,6 +162,7 @@ Route::middleware(['auth', 'verified', 'can:admin access'])->prefix('admklask')-
     Route::delete('/bulk-delete/services', [ServiceController::class, 'massDelete'])->name('services.bulkDelete');
     Route::delete('/bulk-delete/abouts', [AboutController::class, 'massDelete'])->name('abouts.bulkDelete');
     Route::delete('/bulk-delete/certificates', [CertificateController::class, 'massDelete'])->name('certificates.bulkDelete');
+    Route::delete('/bulk-delete/trainingcertificates', [TrainingCertificateController::class, 'massDelete'])->name('trainingcertificates.bulkDelete');
     Route::delete('/bulk-delete/clients', [ClientController::class, 'massDelete'])->name('clients.bulkDelete');
     Route::delete('/bulk-delete/blogs', [BlogController::class, 'massDelete'])->name('blogs.bulkDelete');
     Route::delete('/bulk-delete/feedback', [FeedbackController::class, 'massDelete'])->name('feedback.bulkDelete');
@@ -173,7 +181,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 // Route::view('/check-certificates', 'check-certificate')->name('check.certificate');
 Route::get('/check-certificates', function () {
-    $title = "Cek Sertifikat";
+    $title = "Cek Sertifikat ISO";
     $footerlogos = FooterLogo::all();
     return view('check-certificate', compact('title','footerlogos'));
 })->name('check.certificate');
@@ -205,6 +213,44 @@ Route::get('/certificates/{certificate}', function ($certificate) {
 
     return view('certificate-result', compact('certificate','footerlogos'));
 })->where('certificate', '(.*)')->name('certificates.show');
+
+// training certificate check
+Route::get('/check-training-certificates', function () {
+    $title = "Cek Sertifikat Training";
+    $footerlogos = FooterLogo::all();
+    return view('check-training', compact('title','footerlogos'));
+})->name('check.training');
+Route::post('/check-training-certificates', function () {
+    $request = request();
+    $request->validate([
+        'captcha' => ['required', 'captcha'],
+        'name' => ['required', 'string'],
+        'no_sertifikat' => ['required', 'string']
+    ], [
+        'captcha.captcha' => 'Captcha does not match'
+    ]);
+
+    $training = TrainingCertificate::where(['name' => $request->name, 'no_sertifikat' => $request->no_sertifikat])->first();
+    
+    if (!$training) {
+        return back()->with('error', 'Certificate Training not found');
+    }
+
+    return redirect()->route('training.show', $training->no_sertifikat);
+})->name('check.training.process');
+
+Route::get('/training/{training}', function ($training) {
+    $training = TrainingCertificate::where(['no_sertifikat' => $training])->first();
+    $footerlogos = FooterLogo::all();
+    if (!$training) {
+        return redirect()->route('check.training')->with('error', 'Certificate Training not found');
+    }
+
+    return view('training-result', compact('training','footerlogos'));
+})->where('training', '(.*)')->name('training.show');
+
+
+
 
 Route::get('/reload-captcha', function () {
     return response()->json(['captcha' => captcha_img('math')]);

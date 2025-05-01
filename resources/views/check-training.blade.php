@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row align-items-center pt-5">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 breadcrumb-1 pt-5">
-                    <h1 class="title pt-5 text-center">Check ISO Certificate</h1>
+                    <h1 class="title pt-5 text-center">Check Certificate Training</h1>
                 </div>
             </div>
         </div>
@@ -18,13 +18,13 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="card">
                         <div class="card-body">
-                            <form action="{{ route('check.certificate.process') }}" class="p-5" method="POST">
+                            <form action="{{ route('check.training.process') }}" class="p-5" method="POST">
                                 @csrf
                                 <div class="row">
                                     <div class="col-sm-12 col-lg-6 col-md-6">
-                                        <h5 class="text-secondary">Company Name</h5>
+                                        <h5 class="text-secondary">Name of Participant</h5>
                                             <span class="text-danger">*required</span>
-                                            <input type="text" class="form-control" placeholder="Company Name" name="company_name" required />
+                                            <input type="text" class="form-control" placeholder="Name of Participant" name="name" required />
                                             @error('company_name')
                                                 <div class="alert alert-danger">{{ $message ?? 'Message' }}</div>
                                             @enderror           
@@ -32,7 +32,7 @@
                                     <div class="col-sm-12 col-lg-6 col-md-6">
                                         <h5 class="text-secondary">Certificate Number</h5>
                                         <span class="text-danger">*required</span>
-                                        <input type="text" class="form-control" placeholder="Certificate Number" name="no" required />
+                                        <input type="text" class="form-control" placeholder="Certificate Number" name="no_sertifikat" required />
                                         @error('no')
                                             <div class="alert alert-danger">{{ $message ?? 'Message' }}</div>
                                         @enderror

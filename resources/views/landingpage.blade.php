@@ -30,10 +30,10 @@
                                         <div class="spacer-single"></div>
                                         <div class="sw-text-wrapper">
                                             <div class="subtitle mb-2">KLASIK CERTIFICATION</div>
-                                            <h1 class="slider-title mb-3">Refreshing Spaces With Sparkle And Care</h1>
-                                            <p class="slider-teaser mb-3">Fast, Reliable, and Affordable Cleaning Service</p>
+                                            <h1 class="slider-title mb-3">Enhance Your Business, Trust and Quality</h1>
+                                            <p class="slider-teaser mb-3">with Reliable ISO Certification</p>
                                             <div class="spacer-10"></div>
-                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Book a Services</a>
+                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Call Us</a>
                                         </div>
                                     </div>
 
@@ -59,10 +59,10 @@
                                         <div class="spacer-single"></div>
                                         <div class="sw-text-wrapper">
                                             <div class="subtitle mb-2">KLASIK CERTIFICATION</div>
-                                            <h1 class="slider-title mb-3">Expert Cleaning Services For Spotless Results</h1>
-                                            <p class="slider-teaser mb-3">Fast, Reliable, and Affordable Cleaning Service</p>
+                                            <h1 class="slider-title mb-3">Boost Your Business Competitiveness</h1>
+                                            <p class="slider-teaser mb-3">with International-Standard ISO Certification</p>
                                             <div class="spacer-10"></div>
-                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Book a Services</a>
+                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Call Us</a>
                                         </div>
                                     </div>
 
@@ -96,11 +96,11 @@
             <div class="row g-4 gx-5 align-items-center">
                 <div class="col-lg-6 relative">
                     <div class="relative z-1000">
-                        <div class="subtitle wow fadeInUp" data-wow-delay=".0s">About Uclean</div>
-                        <h2>Bringing Clean, Comfort, and Care Together</h2>
-                        <p>We are a team of passionate cleaning experts who take pride in delivering the highest standard of service. With years of experience in the industry, we’ve perfected our cleaning methods to ensure every job is done right.</p>
-
-                        <a class="btn-main bg-color-2 text-dark wow fadeInUp" data-wow-delay=".6s" href="book-service.html">Book Service Now</a>
+                        <div class="subtitle wow fadeInUp" data-wow-delay=".0s">About KLASIK</div>
+                        <h2>Professional, Accurate and Reliable
+                            Certification Services</h2>
+                        <p>PT. Klasik Certification Indonesia adalah lembaga sertifikasi yang berdiri pada bulan Desember 2024, dengan komitmen kuat untuk memberikan layanan sertifikasi ISO yang profesional, terpercaya, dan berstandar internasional.</p>
+                        <a class="btn-main bg-color-2 text-dark wow fadeInUp" data-wow-delay=".6s" href="book-service.html">About Us</a>
                     </div>
                 </div>
 
@@ -128,8 +128,8 @@
             <div class="row g-4">
                 <div class="col-lg-6 offset-lg-3 text-center">
                     <div class="subtitle wow fadeInUp mb-3">Our Services</div>
-                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Cleaning Services</h2>
-                    <p class="lead mb-0 wow fadeInUp">Whether it's a quick refresh or a deep clean transformation, our expert touch leaves your home or office shining.</p>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">ISO Certification Services</h2>
+                    <p class="lead mb-0 wow fadeInUp">With professional experience and expertise, we are ready to support you through every step of the ISO certification process.</p>
                     <div class="spacer-single"></div>
                     <div class="spacer-half"></div>
                 </div>
@@ -222,7 +222,7 @@
                     <div class="relative mb-3">
                         <div class="card" style="border-radius: 20px;">
                             <div class="card-body p-3">
-                                <a href="{{ route('blogs.show', $blog->id) }}" class="d-block hover mb-3">
+                                <a href="{{ route('blogs.showPublic', $blog->id) }}" class="d-block hover mb-3">
                                     <div class="relative overflow-hidden rounded-1 shadow-soft">
                                         {{-- <img src="{{ Storage::disk('public')->url($service->thumbnail) }}" class="w-50 end-0 absolute hover-op-0" alt="{{ $service->title }}"> --}}
                                         <div class="absolute z-2 start-0 w-100 abs-middle fs-36 text-white text-center">
@@ -235,7 +235,7 @@
                                     <h4>{{ $blog->title }}</h4>
                                     <p class="no-bottom">{!!  substr(strip_tags($blog->short_description), 0, 250)!!}...</p>
                                 </div>
-                                <a href="{{ route('blogs.show', $blog->id) }}" class="btn-main w-100 p-3 mt-3">Read more</a>
+                                <a href="{{ route('blogs.showPublic', $blog->id) }}" class="btn-main w-100 p-3 mt-3">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -378,25 +378,32 @@
                 <section class="relative overflow-hidden" style="background-size: cover; background-repeat: no-repeat;">
                     <div class="container" style="background-size: cover; background-repeat: no-repeat;">
                         <div class="row g-4 grid-divider" style="background-size: cover; background-repeat: no-repeat;">
-                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".2s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".2s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">       
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-phone"></i>
-                                    <h5 class="mb-0">Phone</h5>
-                                    <x-navbar.phonenumber />
+                                    <h5 class="mb-0">Sales</h5>
+                                    +1 5000 6000
                                 </div>
                             </div>
-                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
+                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".4s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
+                                <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                  
+                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-user"></i>    
+                                    <h5 class="mb-0">Support</h5>
+                                    +1 5000 6000
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                         
-                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa-solid fa-map-location-dot"></i>  
-                                    <h5 class="mb-0">Address</h5>
-                                    <x-navbar.address />
+                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa-brands fa-whatsapp"></i>  
+                                    <h5 class="mb-0">Whatsapp</h5>
+                                    +1 5000 6000
                                 </div>
                             </div>
-                            <div class="col-md-4 wow fadeInRight animated" data-wow-delay=".8s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
+                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".8s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-envelope"></i>
                                     <h5 class="mb-0">Email</h5>
-                                    <x-navbar.emails />
+                                    contact@uclean.com 
                                 </div>
                             </div>
                         </div>

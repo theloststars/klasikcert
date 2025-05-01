@@ -61,7 +61,13 @@
                     @can('certificates read')
                         <li>
                             <a href="{{ route('admin.certificates.index') }}"
-                                class="{{ request()->routeIs(['admin.certificates.index', 'admin.certificates.*']) ? 'mm-active' : '' }}">Certificates</a>
+                                class="{{ request()->routeIs(['admin.certificates.index', 'admin.certificates.*']) ? 'mm-active' : '' }}">Company Certificates</a>
+                        </li>
+                    @endcan
+                    @can('certificates read')
+                        <li>
+                            <a href="{{ route('admin.trainingcertificates.index') }}"
+                                class="{{ request()->routeIs(['admin.trainingcertificates.index', 'admin.trainingcertificates.*']) ? 'mm-active' : '' }}">Training Certificates</a>
                         </li>
                     @endcan
                     <!-- @can('standards read')

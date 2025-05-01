@@ -1,6 +1,6 @@
 @extends('layouts.acaraAdminPanel')
 
-{{-- @section('title', 'Standards') --}}
+{{-- @section('title', 'Certificates') --}}
 
 @section('heads')
     <!-- Datatable -->
@@ -25,7 +25,7 @@
         <div class="page-titles">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('admin.index') }}">Dashboard</a></li>
-                <li class="breadcrumb-item active"><a href="javascript:void(0)">Blogs or News</a></li>
+                <li class="breadcrumb-item active"><a href="javascript:void(0)">Certificates</a></li>
             </ol>
         </div>
         <!-- row -->
@@ -34,9 +34,9 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Blogs or News</h4>
+                        <h4 class="card-title">Certificates</h4>
                         <h4 class="card-title">
-                            <a class="add-menu-sidebar" href="{{ route('admin.blogs.create') }}">Create New</a>
+                            <a class="add-menu-sidebar" href="{{ route('admin.trainingcertificates.create') }}">Create New</a>
                         </h4>
                     </div>
                     <div class="card-body">
@@ -47,36 +47,48 @@
                                         <th style="cursor: pointer" id="selections">
                                             <input type="checkbox" class="w-100" style="cursor: pointer">
                                         </th>
-                                        <th>Title</th>
-                                        <th>Created At</th>
-                                        <th>Image</th>
+                                        <th>No</th>
+                                        <th>Name</th>
+                                        {{-- <th>Location</th> --}}
+                                        <th>Standard</th>
+                                        {{-- <th>Scope</th> --}}
+                                        <th>Issue Date</th>
+                                        <th>Expiry Date</th>    
+                                        <th>Status</th>
+                                        {{-- <th>Created At</th> --}}
                                         <th class="d-print-none text-center">Options</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($blogs as $blog)
-                                        <tr data-identifier="{{ $blog->id }}">
+                                    @foreach ($trainingcertificates as $trainingcertificate)
+                                        <tr data-identifier="{{ $trainingcertificate->id }}">
                                             <td></td>
-                                            <td>{{ $blog->title }}</td>
-                                            <td>{{ $blog->created_at->diffForHumans() }}</td>
-                                            <td>
-                                                <img src="{{ Storage::disk('public')->url($blog->thumbnail) }}" alt=""
-                                                    style="width: 50px; height:50px; object-fit: contain;">
+                                            <td>{{ $trainingcertificate->no_sertifikat }}</td>
+                                            <td>{{ $trainingcertificate->name }}</td>
+                                            {{-- <td>{{ $trainingcertificate->location }}</td> --}}
+                                            <td>{{ $trainingcertificate->training ?? '-' }}</td>
+                                            {{-- <td>
+                                                <span style="word-break: break-all;">{{ $trainingcertificate->scope }}</span>
+                                            </td> --}}
+                                            <td>{{ \Carbon\Carbon::parse($trainingcertificate->start_date)->format('d-m-Y') }}</td>
+                                            <td>{{ \Carbon\Carbon::parse($trainingcertificate->end_date)->format('d-m-Y') }}
                                             </td>
+                                            <td>{{ $trainingcertificate->status }}</td>
+                                            {{-- <td>{{ $trainingcertificate->created_at->diffForHumans() }}</td> --}}
                                             <td>
                                                 <div class="d-flex flex-column flex-md-row justify-content-center"
                                                     style="gap: 0.5rem">
-                                                    @can('standards update')
-                                                        <a href="{{ route('admin.blogs.edit', $blog->id) }}"
+                                                    @can('certificates update')
+                                                        <a href="{{ route('admin.trainingcertificates.edit', $trainingcertificate->id) }}"
                                                             class="btn btn-sm btn-secondary">Edit</a>
                                                     @endcan
-                                                    @can('standards delete')
+                                                    @can('certificates delete')
                                                         <span class="btn btn-sm btn-danger" id="deleteButton">Delete</span>
                                                     @endcan
                                                 </div>
                                             </td>
-                                            <form action="{{ route('admin.blogs.destroy', $blog->id) }}" method="post"
-                                                id="destroy-{{ $blog->id }}" style="display: none">
+                                            <form action="{{ route('admin.trainingcertificates.destroy', $trainingcertificate->id) }}"
+                                                method="post" id="destroy-{{ $trainingcertificate->id }}" style="display: none">
                                                 @csrf
                                                 @method('DELETE')
                                             </form>
@@ -90,7 +102,7 @@
             </div>
         </div>
     </div>
-    <form action="{{ route('admin.blogs.bulkDelete') }}" id="deleteSelectedForm" method="POST" class="d-none">
+    <form action="{{ route('admin.trainingcertificates.bulkDelete') }}" id="deleteSelectedForm" method="POST" class="d-none">
         @csrf
         @method('DELETE')
         <input type="text" name="ids" id="ids">
@@ -111,7 +123,7 @@
 
     <script>
         $(document).ready(function() {
-            const exportOption = [1, 2];
+            const exportOption = [1, 2, 3, 4, 5, 6];
             const buttons = [{
                 extend: 'copy',
                 className: 'btn btn-xs rounded-0 btn-secondary',
@@ -166,7 +178,7 @@
                     targets: 0
                 }, {
                     orderable: false,
-                    targets: 3
+                    targets: 7
                 }],
             });
 
@@ -230,7 +242,7 @@
                 selectedRowsArr.push(row.dataset.identifier);
             });
 
-            @can('standards delete')
+            @can('certificates delete')
                 if (selectedRowsArr.length == 0) {
                     swal({
                         title: "0 Data selected",

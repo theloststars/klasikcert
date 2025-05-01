@@ -16,7 +16,7 @@
                     </div>
                     <div class="de-flex-col header-col-mid">
                         <ul id="mainmenu">
-                            <li><a class="menu-item" href="{{ route('landingpage')}}">Home</a></li>
+                            <li><a class="menu-item" href="{{ route('landingpage')}}"> Home</a></li>
                             </li>
                             <li><a class="menu-item" href="#">Services</a>
                                 <ul>
@@ -28,7 +28,13 @@
                                     <x-navbar.abouts />
                                 </ul>
                             </li>
-                            <li><a class="menu-item" href="{{ route('check.certificate')}}">Certificate Check</a></li>
+                            <li>
+                                <a href="#" class="menu-item">Check Certificate</a>
+                                <ul>
+                                    <li><a class="menu-item" href="{{ route('check.certificate') }}">  ISO Certificate</a></li>
+                                <li><a class="menu-item" href="{{ route('check.training')}}">Training Certificate</a></li>
+                                </ul>
+                            </li>
                             {{-- <li><a class="menu-item" href="contact.html">Contact</a></li> --}}
                         </ul>
                     </div>

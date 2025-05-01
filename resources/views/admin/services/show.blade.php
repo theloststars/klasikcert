@@ -40,11 +40,10 @@
                                 </h2>
                                 <div class="spacer-single" style="background-size: cover; background-repeat: no-repeat;"></div>
 
-                                <div class="d-flex justify-content-center" style="background-size: cover; background-repeat: no-repeat;">
+                                {{-- <div class="d-flex justify-content-center" style="background-size: cover; background-repeat: no-repeat;">
                                     <div class="text-white px-3" style="background-size: cover; background-repeat: no-repeat;"><i class="icofont-calendar me-2 id-color-2"></i>
                                         {{ \Carbon\Carbon::parse($service->created_at)->format('d F Y') }}</div>
-                                    {{-- <div class="text-white px-3" style="background-size: cover; background-repeat: no-repeat;"><i class="icofont-user-alt-6 me-2 id-color-2"></i>By: Jannette Burtin</div> --}}
-                                </div>
+                                </div> --}}
                                 <div class="spacer-double" style="background-size: cover; background-repeat: no-repeat;"></div>
                             </div>
                         </div>

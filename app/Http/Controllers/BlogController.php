@@ -6,8 +6,8 @@ use App\Models\Blog;
 use DOMDocument;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class BlogController extends Controller
 {
@@ -92,7 +92,7 @@ class BlogController extends Controller
         }
 
         $body = $dom->saveHTML();
-
+        
         $file = $request->file('thumbnail');
         $path = Storage::disk('public')->putFile('blogs', new File($file));
 
@@ -100,8 +100,8 @@ class BlogController extends Controller
             'title' => $request->title,
             'body' => $body,
             'slug' => 'slug',
-            'thumbnail' => $path,
-            'short_description' => $request->short_description
+            'short_description' => $request->short_description,
+            'thumbnail' => $path
         ]);
 
         $slug = Str::of($request->title)->slug('-');
