@@ -267,7 +267,7 @@ Route::post('/send-email', function () {
         'message' => ['required', 'string']
     ]);
 
-    Mail::to('office@ssabaccreditation.com')->send(new ContactUs($request));
+    Mail::to('office@klasikcert.com')->send(new ContactUs($request));
 
     if ($request->notCheck) {
         $landingPage = route('landingpage') . '#section-contact-us';
