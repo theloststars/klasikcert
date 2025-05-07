@@ -70,7 +70,7 @@
 
                                 <div class="post-text" style="background-size: cover; background-repeat: no-repeat;">
                                     <p>
-                                        {!! $blog->description !!}
+                                        {!! $blog->body !!}
                                     </p>
                                 </div>
 
