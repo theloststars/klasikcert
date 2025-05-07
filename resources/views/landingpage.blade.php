@@ -33,7 +33,7 @@
                                             <h1 class="slider-title mb-3">Enhance Your Business, Trust and Quality</h1>
                                             <p class="slider-teaser mb-3">with Reliable ISO Certification</p>
                                             <div class="spacer-10"></div>
-                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Call Us</a>
+                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="#contact-us">Contact Us</a>
                                         </div>
                                     </div>
 
@@ -62,7 +62,7 @@
                                             <h1 class="slider-title mb-3">Boost Your Business Competitiveness</h1>
                                             <p class="slider-teaser mb-3">with International-Standard ISO Certification</p>
                                             <div class="spacer-10"></div>
-                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="contact.html">Call Us</a>
+                                            <a class="btn-main bg-color-2 text-dark mb10 mb-3" href="#contact-us">Call Us Us</a>
                                         </div>
                                     </div>
 
@@ -100,7 +100,7 @@
                         <h2>Professional, Accurate and Reliable
                             Certification Services</h2>
                         <p>PT. Klasik Certification Indonesia adalah lembaga sertifikasi yang berdiri pada bulan Desember 2024, dengan komitmen kuat untuk memberikan layanan sertifikasi ISO yang profesional, terpercaya, dan berstandar internasional.</p>
-                        <a class="btn-main bg-color-2 text-dark wow fadeInUp" data-wow-delay=".6s" href="book-service.html">About Us</a>
+                        <a class="btn-main bg-color-2 text-dark wow fadeInUp" data-wow-delay=".6s" href="#about-us">About Us</a>
                     </div>
                 </div>
 
@@ -381,29 +381,22 @@
                             <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".2s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">       
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-phone"></i>
-                                    <h5 class="mb-0">Sales</h5>
-                                    +1 5000 6000
-                                </div>
-                            </div>
-                            <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".4s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.4s; animation-name: fadeInRight;">
-                                <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                  
-                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-user"></i>    
-                                    <h5 class="mb-0">Support</h5>
-                                    +1 5000 6000
+                                    <h5 class="mb-0">Hot Line number</h5>
+                                    <x-navbar.phonenumber />
                                 </div>
                             </div>
                             <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".6s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.6s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">                         
-                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa-brands fa-whatsapp"></i>  
-                                    <h5 class="mb-0">Whatsapp</h5>
-                                    +1 5000 6000
+                                    <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-solid fa-location-dot"></i>  
+                                    <h5 class="mb-0">Location</h5>
+                                    <x-navbar.address />
                                 </div>
                             </div>
                             <div class="col-md-3 wow fadeInRight animated" data-wow-delay=".8s" style="background-size: cover; background-repeat: no-repeat; visibility: visible; animation-delay: 0.8s; animation-name: fadeInRight;">
                                 <div class="text-center" style="background-size: cover; background-repeat: no-repeat;">
                                     <i class="bg-color text-light fs-32 p-30 circle mb-3 fa fa-envelope"></i>
                                     <h5 class="mb-0">Email</h5>
-                                    contact@uclean.com 
+                                    <x-navbar.emails />
                                 </div>
                             </div>
                         </div>
@@ -416,9 +409,9 @@
                     <div class="spacer-double"></div>
                     <div class="ps-lg-5">
                         <div class="subtitle wow fadeInUp mb-3">Contact With Us</div>
-                        <h2 class="wow fadeInUp">Shine Brighter with Our Expert Touch</h2>
+                        <h2 class="wow fadeInUp">Enhance Your Business, Trust and Quality</h2>
                         <div class="spacer-10"></div>
-                        <a class="btn-main btn-line wow fadeInUp" href="book-repair.html">Contact Us</a>
+                        <a class="btn-main btn-line wow fadeInUp" href="#contact-us">Contact Us</a>
                     </div>
                     <div class="spacer-double"></div>
                     <div class="spacer-single"></div>

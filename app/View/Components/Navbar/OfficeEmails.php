@@ -5,7 +5,7 @@ namespace App\View\Components\Navbar;
 use App\Models\Contact;
 use Illuminate\View\Component;
 
-class OfficeEmails extends Component
+class Emails extends Component
 {
     public $datas;
     /**
@@ -15,7 +15,7 @@ class OfficeEmails extends Component
      */
     public function __construct()
     {
-        $this->datas = Contact::where('url_slug','office-emails')->get();
+        $this->datas = Contact::where('url_slug','email')->get();
     }
 
     /**
@@ -25,6 +25,6 @@ class OfficeEmails extends Component
      */
     public function render()
     {
-        return view('components.navbar.officeemails', compact('datas'));
+        return view('components.navbar.emails');
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\FooterLogo;
 use DOMDocument;
 use Illuminate\Http\File;
 use Illuminate\Http\Request;
@@ -123,15 +124,15 @@ class BlogController extends Controller
     {
         return redirect()->route('blogs.showPublic', $id);
         // $blog = Blog::findOrFail($id);
-
-        // return view('blogs.show', compact('blog'));
+        $footerlogos = FooterLogo::all();
+        return view('blogs.show', compact('blog','footerlogos'));
     }
 
     public function showPublic($id)
     {
         $blog = Blog::findOrFail($id);
-
-        return view('blogs.show', compact('blog'));
+        $footerlogos = FooterLogo::all();
+        return view('blogs.show', compact('blog','footerlogos'));
     }
 
     /**
