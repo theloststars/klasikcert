@@ -19,7 +19,7 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="swiper-inner" data-bgimage="url({{asset('uclean/images/pexels-shkrabaanthony-5816298.jpg')}})">
+                    <div class="swiper-inner" data-bgimage="url({{asset('uclean/images/side-view-cropped-unrecognizable-business-people-working-common-desk.jpg')}})">
                         <div class="sw-caption">
                             <div class="container">
                                 <div class="row g-4 justify-content-center">
@@ -48,7 +48,7 @@
 
                 <!-- Slides -->
                 <div class="swiper-slide">
-                    <div class="swiper-inner" data-bgimage="url( {{asset('uclean/images/pexels-sora-shimazaki-5668494.JPG')}} )">
+                    <div class="swiper-inner" data-bgimage="url( {{asset('uclean/images/group-people-working-out-business-plan-office.jpg')}} )">
                         <div class="sw-caption">
                             <div class="container">
                                 <div class="row g-4 justify-content-center">
